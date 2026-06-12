@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Módulo 3 — Grande Teste</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="home-page">
+
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="logo-area">
+        <span class="logo-icon">🏁</span>
+        <div class="logo-stack">
+          <span class="logo-module">MÓDULO 3</span>
+          <span class="logo-title">GRANDE <span class="accent">TESTE</span></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="home-main test-page">
+    <section class="home-hero">
+      <div class="screen-tag">Avaliação final</div>
+      <h1 class="display-title">GRANDE <span class="accent-word">TESTE</span></h1>
+      <p class="lead-text">
+        Teste os conhecimentos adquiridos sobre os fundamentos da condução de enduro.
+      </p>
+    </section>
+
+    <section class="big-test-wrap">
+      <div class="screen-meta-row">
+        <span class="content-type">QUESTIONÁRIO INTERATIVO</span>
+      </div>
+
+      <div class="instruction-note">
+        <div class="note-row"><span class="note-label">Objetivo:</span> Verificar a compreensão dos conteúdos dos módulos anteriores.</div>
+        <div class="note-row"><span class="note-label">Formato:</span> 12 perguntas de escolha múltipla com feedback automático.</div>
+        <div class="note-row"><span class="note-label">Critério:</span> Cada pergunta tem apenas uma resposta correta.</div>
+      </div>
+
+      <div class="test-progress-box">
+        <div class="test-progress-top">
+          <span id="testAnswered">0 / 12 respondidas</span>
+          <span id="testPercent">0%</span>
+        </div>
+        <div class="test-progress-track">
+          <div class="test-progress-fill" id="testProgressFill"></div>
+        </div>
+      </div>
+
+      <div id="bigQuizContainer" class="quiz-container big-quiz-container"></div>
+
+      <div id="bigQuizResult" class="quiz-result hidden" aria-live="polite">
+        <div class="result-score" id="bigResultScore">0/12</div>
+        <div class="result-msg" id="bigResultMsg"></div>
+        <button class="btn-primary" onclick="retakeBigQuiz()">Tentar novamente</button>
+      </div>
+
+      <div class="module-actions">
+        <a href="index.html" class="btn-secondary">Voltar à página principal</a>
+      </div>
+    </section>
+  </main>
+
+  <script src="big-test.js"></script>
+</body>
+</html>

@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enduro para Principiantes — Módulo E-Learning</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════ CABEÇALHO ═══════════════════ -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="logo-area">
+        <span class="logo-icon">⚙</span>
+        <div class="logo-stack">
+          <span class="logo-module">MÓDULO 1</span>
+          <span class="logo-title">ENDURO <span class="accent">BÁSICO</span></span>
+        </div>
+      </div>
+      <div class="progress-area">
+        <span class="progress-label">PROGRESSO</span>
+        <div class="progress-track">
+          <div class="progress-fill" id="progressFill"></div>
+        </div>
+        <span class="progress-pct" id="progressPct">0%</span>
+      </div>
+      <div class="step-indicator" id="stepIndicator">1 / 11</div>
+    </div>
+  </header>
+
+  <!-- ═══════════════════ CONTEÚDO PRINCIPAL ═══════════════════ -->
+  <main class="module-main" id="moduleMain">
+
+    <!-- ═══════════════════════════════════════════════════
+         ECRÃ 1 — Introdução
+         FINALIDADE: Dar as boas-vindas ao formando e definir expectativas
+         TIPO DE APRENDIZAGEM: Introdução ao módulo
+         TIPO DE MÉDIA: Imagem principal + resumo textual
+         INTERAÇÃO: Botão de início único
+    ═══════════════════════════════════════════════════════ -->
+    <section class="screen active" id="screen1" data-screen="1">
+      <div class="screen-layout intro-layout">
+        <div class="intro-media">
+          <!-- substituir pela imagem principal real -->
+          <img src="https://www.picshare.co.il/m_pictures/img70717.jpg" alt="Piloto de enduro" class="hero-img" />
+          <div class="img-overlay"></div>
+          <div class="img-badge">MÓDULO 01</div>
+        </div>
+        <div class="intro-content">
+          <div class="screen-meta-row">
+            <span class="content-type">TIPO DE CONTEÚDO: INTRODUÇÃO</span>
+          </div>
+          <div class="instruction-note">
+            <div class="note-row"><span class="note-label">Objetivo de aprendizagem:</span> Compreender o âmbito e os objetivos deste módulo e-learning.</div>
+            <div class="note-row"><span class="note-label">Interação:</span> Ler a visão geral e clicar para começar.</div>
+            <div class="note-row"><span class="note-label">Tempo estimado:</span> 1 minuto</div>
+          </div>
+          <div class="screen-tag">Bem-vindo</div>
+          <h1 class="display-title">ENDURO<br /><span class="accent-word">PARA PRINCIPIANTES</span></h1>
+          <p class="lead-text">Técnicas básicas de condução em todo-o-terreno</p>
+          <p class="body-text">Este módulo apresenta aos pilotos iniciantes os princípios fundamentais da condução de moto de enduro em terreno irregular. Irá aprender as bases da técnica de pilotagem, as regras de segurança e as competências essenciais para começar a praticar.</p>
+          <div class="meta-pills">
+            <span class="pill">🕐 29 min aula + 27 min videos</span>
+            <span class="pill">11 ecrãs</span>
+            <span class="pill">Nível iniciante</span>
+          </div>
+          <button class="btn-primary" onclick="goNext()">Começar a aprendizagem →</button>
+          <br>
+          <a href="index.html" class="btn-secondary">← Voltar à página principal</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════
+         ECRÃ 2 — O que é o enduro
+         FINALIDADE: Introduzir o conceito da modalidade de enduro
+         TIPO DE APRENDIZAGEM: Explicação conceptual com exemplos visuais
+         TIPO DE MÉDIA: Cartões de imagem — tipos de terreno
+         INTERAÇÃO: Cartões com descrições ao passar o rato
+    ═══════════════════════════════════════════════════════ -->
+    <section class="screen" id="screen2" data-screen="2">
+      <div class="screen-layout standard-layout">
+        <div class="screen-meta-row">
+          <span class="content-type">TIPO DE CONTEÚDO: EXPLICAÇÃO CONCEPTUAL</span>
+        </div>
+        <div class="instruction-note">
+          <div class="note-row"><span class="note-label">Objetivo de aprendizagem:</span> Explicar o que é o enduro e identificar os principais tipos de terreno.</div>
+          <div class="note-row"><span class="note-label">Interação:</span> Explorar os cartões visuais de terreno.</div>
+          <div class="note-row"><span class="note-label">Tempo estimado:</span> 2 minutos</div>
+        </div>
+        <div class="content-header">
+          <div class="screen-tag">Modalidade</div>
+          <h2 class="section-title">O QUE É O <span class="accent-word">ENDURO</span></h2>
+          <p class="body-text">O enduro é uma modalidade motociclista que se realiza em terreno acidentado. Diferentes tipos de superfície exigem técnicas de condução distintas.</p>
+        </div>
+        <div class="cards-grid">
+          <div class="terrain-card">
+            <!-- substituir pela imagem de terreno real -->
+            <img src="https://cdn.pixabay.com/photo/2024/03/27/15/40/enduro-8659331_1280.jpg" alt="Terra" />
+            <div class="card-label"><span class="card-icon">🌱</span><span>TERRA</span></div>
+            <div class="card-desc">A superfície mais comum nas provas de enduro. Requer acelerador moderado e posição correta.</div>
+          </div>
+          <div class="terrain-card">
+            <!-- substituir pela imagem de terreno real -->
+            <img src="https://www.endurochannel.com/wp-content/uploads/2024/07/451102577_17881640361085466_1657433852935002557_n.jpg" alt="Areia" />
+            <div class="card-label"><span class="card-icon">🏜</span><span>AREIA</span></div>
+            <div class="card-desc">Superfície instável. Requer acelerador constante e braços relaxados para manter o controlo.</div>
+          </div>
+          <div class="terrain-card">
+            <!-- substituir pela imagem de terreno real -->
+            <img src="https://preview.redd.it/x8qgwzbinlv61.jpg?auto=webp&s=bea455ae78c7374a60858da317759837ec654721" alt="Pedras" />
+            <div class="card-label"><span class="card-icon">🪨</span><span>PEDRAS</span></div>
+            <div class="card-desc">A superfície mais técnica e exigente. Requer uma escolha precisa da linha de condução.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════
+         ECRÃ 3 — Equipamento
+         FINALIDADE: Identificar e descrever o equipamento de proteção necessário
+         TIPO DE APRENDIZAGEM: Diagrama interativo com etiquetas
+         TIPO DE MÉDIA: Cartões de imagem com descrições expansíveis
+         INTERAÇÃO: Clicar para revelar os detalhes de cada peça
+    ═══════════════════════════════════════════════════════ -->
+    <section class="screen" id="screen3" data-screen="3">
+      <div class="screen-layout standard-layout">
+        <div class="screen-meta-row">
+          <span class="content-type">TIPO DE CONTEÚDO: ELEMENTO INTERATIVO</span>
+        </div>
+        <div class="instruction-note">
+          <div class="note-row"><span class="note-label">Objetivo de aprendizagem:</span> Identificar o equipamento de proteção essencial e explicar a função de cada peça.</div>
+          <div class="note-row"><span class="note-label">Interação:</span> Clicar em cada peça do equipamento para revelar a descrição.</div>
+          <div class="note-row"><span class="note-label">Tempo estimado:</span> 3 minutos</div>
+        </div>
+        <div class="content-header">
+          <div class="screen-tag">Segurança</div>
+          <h2 class="section-title">EQUIPAMENTO <span class="accent-word">DO PILOTO</span></h2>
+          <p class="body-text">Clique em cada peça do equipamento para saber mais.</p>
+        </div>
+        <div class="gear-grid">
+          <div class="gear-item" onclick="toggleGear(this)" data-info="O capacete de proteção é o elemento mais importante do equipamento. Deve cumprir a norma DOT ou ECE. Para o enduro utilizam-se capacetes com viseira e pico para proteção contra lama e ramos.">
+            <div class="gear-icon-wrap">
+              <img src="https://ep1.pinkbike.org/p4pb23501546/p4pb23501546.jpg" alt="Capacete" />
+              <div class="gear-check">✓</div>
+            </div>
+            <div class="gear-name">Capacete</div>
+            <div class="gear-desc-panel"></div>
+          </div>
+          <div class="gear-item" onclick="toggleGear(this)" data-info="As botas de enduro protegem o tornozelo e o pé de impactos. A sola rígida impede o deslizamento nos pedais. A altura do cano deve ser de pelo menos 25 cm.">
+            <div class="gear-icon-wrap">
+              <img src="https://tse2.mm.bing.net/th/id/OIP.g4Z9gOVsLhWB3YleMeaIIQHaE8?w=1200&h=800&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Botas" />
+              <div class="gear-check">✓</div>
+            </div>
+            <div class="gear-name">Botas</div>
+            <div class="gear-desc-panel"></div>
+          </div>
+          <div class="gear-item" onclick="toggleGear(this)" data-info="A proteção corporal (colete de proteção) protege o peito, as costas e os ombros. É composta por placas rígidas sobre uma base macia. Obrigatória para a condução em todo-o-terreno.">
+            <div class="gear-icon-wrap">
+              <img src="https://img.joomcdn.net/cd59aad8c0084a21fa5160e881ca96aa7315946a_original.jpeg" alt="Proteção corporal" />
+              <div class="gear-check">✓</div>
+            </div>
+            <div class="gear-name">Proteção corporal</div>
+            <div class="gear-desc-panel"></div>
+          </div>
+          <div class="gear-item" onclick="toggleGear(this)" data-info="As luvas protegem as mãos de impactos e melhoram a aderência ao guiador. Para o enduro, escolha luvas com proteções reforçadas nos nós dos dedos.">
+            <div class="gear-icon-wrap">
+              <img src="https://images.squarespace-cdn.com/content/v1/5bf65317266c07c1f751f4c9/1576051642368-ZL7OXRRLGFAO4D8Y517B/E3+FIVE+Gloves+3.JPG" alt="Luvas" />
+              <div class="gear-check">✓</div>
+            </div>
+            <div class="gear-name">Luvas</div>
+            <div class="gear-desc-panel"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════
+         ECRÃ 4 — Posição correta
+         FINALIDADE: Demonstrar a postura correta de condução
+         TIPO DE APRENDIZAGEM: Demonstração + notas estruturadas
+         TIPO DE MÉDIA: Vídeo de substituição + lista numerada
+         INTERAÇÃO: Reprodução de vídeo + leitura da lista
+    ═══════════════════════════════════════════════════════ -->
+    <section class="screen" id="screen4" data-screen="4">
+      <div class="screen-layout video-layout">
+        <div class="video-content-side">
+          <div class="screen-meta-row">
+            <span class="content-type">TIPO DE CONTEÚDO: VÍDEO DE DEMONSTRAÇÃO</span>
+          </div>
+          <div class="instruction-note">
+            <div class="note-row"><span class="note-label">Objetivo de aprendizagem:</span> Descrever a posição corporal correta para conduzir em todo-o-terreno.</div>
+            <div class="note-row"><span class="note-label">Interação:</span> Demonstração em vídeo + lista de verificação.</div>
+            <div class="note-row"><span class="note-label">Tempo estimado:</span> 4 minutos</div>
+          </div>
+          <div class="screen-tag">Técnica</div>
+          <h2 class="section-title">POSIÇÃO <span class="accent-word">CORRETA</span></h2>
+          <div class="checklist">
+            <div class="check-item">
+              <div class="check-num">01</div>
+              <div class="check-text"><strong>Em pé nos pedais de apoio</strong><p>Todo o peso nos pés. As pernas absorvem as irregularidades do terreno, reduzindo o impacto no corpo.</p></div>
+            </div>
+            <div class="check-item">
+              <div class="check-num">02</div>
+              <div class="check-text"><strong>Joelhos encostados ao depósito</strong><p>Os joelhos formam um "aperto" — são o ponto de contacto com a moto e o centro do controlo.</p></div>
+            </div>
+            <div class="check-item">
+              <div class="check-num">03</div>
+              <div class="check-text"><strong>Tronco relaxado</strong><p>A tensão nos braços é o erro mais comum. O guiador deve mover-se livremente sem resistência.</p></div>
+            </div>
+          </div>
+        </div>
+        <div class="video-embed-side">
+          <div class="video-placeholder">
+            <a href="https://www.youtube.com/watch?v=_FzURX3rpyM" target="_blank">
+              <img src="https://amcn.com.au/wp-content/uploads/2018/12/48383037_383113669103587_8560055423644729344_n.jpg" class="video-thumb">
+              <div class="video-label">VER VIDEO NO YOUTUBE</div>   
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════
+         ECRÃ 5 — Equilíbrio
+         FINALIDADE: Explicar a física do equilíbrio e do centro de gravidade
+         TIPO DE APRENDIZAGEM: Explicação conceptual + vídeo em câmara lenta
+         TIPO DE MÉDIA: Vídeo de substituição + blocos informativos
+         INTERAÇÃO: Leitura dos blocos informativos + visualização do vídeo
+    ═══════════════════════════════════════════════════════ -->
+    <section class="screen" id="screen5" data-screen="5">
+      <div class="screen-layout video-layout">
+        <div class="video-content-side">
+          <div class="screen-meta-row">
+            <span class="content-type">TIPO DE CONTEÚDO: VÍDEO DE DEMONSTRAÇÃO</span>
+          </div>
+          <div class="instruction-note">
+            <div class="note-row"><span class="note-label">Objetivo de aprendizagem:</span> Compreender o papel do centro de gravidade na estabilidade em todo-o-terreno.</div>
+            <div class="note-row"><span class="note-label">Interação:</span> Vídeo em câmara lenta + blocos conceptuais.</div>
+            <div class="note-row"><span class="note-label">Tempo estimado:</span> 4 minutos</div>
+          </div>
+          <div class="screen-tag">Física do movimento</div>
+          <h2 class="section-title">EQUILÍBRIO E <span class="accent-word">ESTABILIDADE</span></h2>
+          <p class="body-text">O controlo do centro de gravidade é o fundamento de uma condução correta em todo-o-terreno.</p>
+          <div class="info-blocks">
+            <div class="info-block">
+              <div class="ib-icon">⬇</div>
+              <div class="ib-body"><strong>Centro de gravidade baixo</strong><p>Em pé nos pedais de apoio, o corpo torna-se um amortecedor ativo — as pernas absorvem os impactos do terreno.</p></div>
+            </div>
+            <div class="info-block">
+              <div class="ib-icon">⚖</div>
+              <div class="ib-body"><strong>Distribuição do peso</strong><p>Nas subidas — peso à frente. Nas descidas — peso atrás. Nas curvas — desloque a anca para o interior da curva.</p></div>
+            </div>
+            <div class="info-block">
+              <div class="ib-icon">👀</div>
+              <div class="ib-body"><strong>Olhar em frente</strong><p>Olhe 5 a 10 metros à frente. O corpo equilibra-se instintivamente na direção do olhar.</p></div>
+            </div>
+          </div>
+        </div>
+        <div class="video-embed-side">
+          <div class="video-placeholder">
+            <a href="https://www.youtube.com/watch?v=p-xKVEiqsr0" target="_blank">
+              <img src="https://www.motomag.gr/sites/default/files/styles/article_full_header_image/public/2024-04/Enduro.jpg?h=d3cf812a&itok=e5-xKUZ1" class="video-thumb">
+              <div class="video-label">VER VIDEO NO YOUTUBE</div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════
+         ECRÃ 6 — Controlo do acelerador e dos travões
+         FINALIDADE: Explicar a técnica de acelerador, embraiagem e travão
+         TIPO DE APRENDIZAGEM: Explicação em separadores
+         TIPO DE MÉDIA: Texto em separadores + vídeo de substituição
+         INTERAÇÃO: Navegar entre os separadores dos controlos
+    ═══════════════════════════════════════════════════════ -->
+    <section class="screen" id="screen6" data-screen="6">
+      <div class="screen-layout video-layout">
+        <div class="video-content-side">
+          <div class="screen-meta-row">
+            <span class="content-type">TIPO DE CONTEÚDO: EXPLICAÇÃO CONCEPTUAL</span>
+          </div>
+          <div class="instruction-note">
+            <div class="note-row"><span class="note-label">Objetivo de aprendizagem:</span> Descrever a técnica correta de acelerador, embraiagem e travão para a condução em todo-o-terreno.</div>
+            <div class="note-row"><span class="note-label">Interação:</span> Conteúdo em separadores — alternar entre os tipos de controlo.</div>
+            <div class="note-row"><span class="note-label">Tempo estimado:</span> 4 minutos</div>
+          </div>
+          <div class="screen-tag">Controlo</div>
+          <h2 class="section-title">CONTROLO <span class="accent-word">DA MOTO</span></h2>
+          <div class="tabs-wrap">
+            <div class="tab-buttons">
+              <button class="tab-btn active" onclick="switchTab(this,'tab-gas')">Acelerador</button>
+              <button class="tab-btn" onclick="switchTab(this,'tab-clutch')">Embraiagem</button>
+              <button class="tab-btn" onclick="switchTab(this,'tab-brake')">Travão</button>
+            </div>
+            <div class="tab-content active" id="tab-gas">
+              <p>O acelerador suave e progressivo é a chave para a tração sem derrape. Uma aceleração brusca em terreno escorregadio provoca a perda da roda traseira. Abra o acelerador gradualmente, em várias etapas.</p>
+            </div>
+            <div class="tab-content" id="tab-clutch">
+              <p>A embraiagem no enduro é utilizada de forma ativa. O deslizamento da embraiagem em subidas e secções técnicas permite dosear a tração com precisão. Mantenha sempre dois dedos na alavanca.</p>
+            </div>
+            <div class="tab-content" id="tab-brake">
+              <p>O travão dianteiro fornece 70% da potência de travagem, mas deve ser usado com cautela em todo-o-terreno. O traseiro serve para estabilizar nas descidas. Uma pressão suave evita o bloqueio das rodas.</p>
+            </div>
+          </div>
+        </div>
+        <div class="video-embed-side">
+          <div class="video-placeholder">
+            <a href="https://www.youtube.com/watch?v=62gRApPMkDs" target="_blank">
+              <img src="https://i.ytimg.com/vi/QxLBezebPyU/maxresdefault.jpg" class="video-thumb">
+              <div class="video-label">VER VIDEO NO YOUTUBE</div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════
+         ECRÃ 7 — Escolha da trajetória
+         FINALIDADE: Ensinar o formando a identificar a linha segura vs. perigosa
+         TIPO DE APRENDIZAGEM: Micro-exercício — decisão em 3 passos + feedback
+         TIPO DE MÉDIA: Diagrama SVG interativo com feedback animado
+         INTERAÇÃO: Passo 1: escolher linha → Passo 2: destaque animado → Passo 3: explicação
+    ═══════════════════════════════════════════════════════ -->
+    <section class="screen" id="screen7" data-screen="7">
+      <div class="screen-layout standard-layout">
+        <div class="screen-meta-row">
+          <span class="content-type">TIPO DE CONTEÚDO: ELEMENTO INTERATIVO</span>
+        </div>
+        <div class="instruction-note">
+          <div class="note-row"><span class="note-label">Objetivo de aprendizagem:</span> Identificar uma trajetória segura em oposição a uma linha perigosa em terreno irregular.</div>
+          <div class="note-row"><span class="note-label">Interação:</span> Micro-exercício em 3 passos: escolher linha → destaque animado → explicação detalhada.</div>
+          <div class="note-row"><span class="note-label">Tempo estimado:</span> 4 minutos</div>
+        </div>
+        <div class="content-header">
+          <div class="screen-tag">Tática</div>
+          <h2 class="section-title">ESCOLHA DA LINHA <span class="accent-word">DE CONDUÇÃO</span></h2>
+          <p class="body-text">Micro-exercício: clique numa linha de condução — a segura ou a perigosa.</p>
+        </div>
+
+        <div class="traj-steps" id="trajSteps">
+          <div class="traj-step active" id="tstep1"><span class="ts-num">1</span><span class="ts-label">Escolha uma linha</span></div>
+          <div class="traj-step" id="tstep2"><span class="ts-num">2</span><span class="ts-label">Linha em destaque</span></div>
+          <div class="traj-step" id="tstep3"><span class="ts-num">3</span><span class="ts-label">Explicação</span></div>
+        </div>
+
+        <div class="trajectory-wrap">
+          <svg id="trajectorySVG" viewBox="0 0 700 320" xmlns="http://www.w3.org/2000/svg">
+            <rect width="700" height="320" fill="#1a1a1a" rx="12"/>
+            <ellipse cx="180" cy="200" rx="40" ry="22" fill="#3d3525"/>
+            <ellipse cx="320" cy="130" rx="55" ry="28" fill="#3d3525"/>
+            <ellipse cx="490" cy="210" rx="45" ry="20" fill="#3d3525"/>
+            <ellipse cx="180" cy="200" rx="30" ry="14" fill="#4a4030"/>
+            <ellipse cx="320" cy="130" rx="40" ry="18" fill="#4a4030"/>
+            <ellipse cx="490" cy="210" rx="32" ry="13" fill="#4a4030"/>
+            <!-- linha PERIGOSA -->
+            <path id="wrongLine" d="M 60 260 C 120 240 140 200 200 180 C 260 160 300 130 330 120 C 380 100 440 190 510 200 C 560 210 610 190 650 180"
+              stroke="#ef4444" stroke-width="4" fill="none" stroke-dasharray="8,5" opacity="0.55" class="traj-path" data-type="wrong"/>
+            <!-- linha SEGURA -->
+            <path id="correctLine" d="M 60 260 C 100 250 130 240 150 230 C 170 220 200 225 240 215 C 280 205 290 160 340 150 C 390 140 420 155 450 175 C 480 195 510 230 560 235 C 600 238 630 220 650 210"
+              stroke="#22c55e" stroke-width="4" fill="none" stroke-dasharray="8,5" opacity="0.55" class="traj-path" data-type="correct"/>
+            <!-- Início / Fim -->
+            <circle cx="60" cy="260" r="12" fill="#FF6B00"/>
+            <text x="60" y="265" text-anchor="middle" fill="white" font-size="10" font-family="DM Sans">I</text>
+            <circle cx="650" cy="195" r="12" fill="#FF6B00"/>
+            <text x="650" y="200" text-anchor="middle" fill="white" font-size="10" font-family="DM Sans">F</text>
+            <!-- Áreas de clique transparentes -->
+            <path d="M 60 260 C 120 240 140 200 200 180 C 260 160 300 130 330 120 C 380 100 440 190 510 200 C 560 210 610 190 650 180"
+              stroke="transparent" stroke-width="24" fill="none" onclick="trajClick('wrong')" style="cursor:pointer"/>
+            <path d="M 60 260 C 100 250 130 240 150 230 C 170 220 200 225 240 215 C 280 205 290 160 340 150 C 390 140 420 155 450 175 C 480 195 510 230 560 235 C 600 238 630 220 650 210"
+              stroke="transparent" stroke-width="24" fill="none" onclick="trajClick('correct')" style="cursor:pointer"/>
+            <!-- Etiquetas -->
+            <text x="340" y="80" text-anchor="middle" fill="#ef4444" font-size="12" font-family="DM Sans" font-weight="600" opacity="0.65">← LINHA PERIGOSA</text>
+            <text x="340" y="264" text-anchor="middle" fill="#22c55e" font-size="12" font-family="DM Sans" font-weight="600" opacity="0.65">LINHA SEGURA →</text>
+          </svg>
+          <div class="traj-feedback" id="trajFeedback">
+            <div class="traj-hint">👆 Clique numa das linhas no diagrama acima</div>
+          </div>
+          <button class="btn-secondary traj-reset hidden" id="trajReset" onclick="resetTrajectory()">↺ Tentar novamente</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════
+         ECRÃ 8 — Erros dos principiantes
+         FINALIDADE: Identificar os erros mais comuns e as respetivas correções
+         TIPO DE APRENDIZAGEM: Análise de erros com soluções expansíveis
+         TIPO DE MÉDIA: Lista acordeão interativa
+         INTERAÇÃO: Clicar para expandir erro + solução
+    ═══════════════════════════════════════════════════════ -->
+    <section class="screen" id="screen8" data-screen="8">
+      <div class="screen-layout standard-layout">
+        <div class="screen-meta-row">
+          <span class="content-type">TIPO DE CONTEÚDO: ELEMENTO INTERATIVO</span>
+        </div>
+        <div class="instruction-note">
+          <div class="note-row"><span class="note-label">Objetivo de aprendizagem:</span> Reconhecer os erros mais comuns dos principiantes e descrever como corrigir cada um.</div>
+          <div class="note-row"><span class="note-label">Interação:</span> Clicar nos itens do acordeão para revelar a análise do erro e a correção.</div>
+          <div class="note-row"><span class="note-label">Tempo estimado:</span> 3 minutos</div>
+        </div>
+        <div class="content-header">
+          <div class="screen-tag">Análise de erros</div>
+          <h2 class="section-title">ERROS <span class="accent-word">TÍPICOS</span></h2>
+          <p class="body-text">Clique num erro para saber como corrigi-lo.</p>
+        </div>
+        <div class="mistakes-list">
+          <div class="mistake-item" onclick="toggleMistake(this)">
+            <div class="mistake-header">
+              <div class="mistake-icon">👁</div>
+              <div class="mistake-title">Olhar para baixo, junto à roda</div>
+              <div class="mistake-toggle">+</div>
+            </div>
+            <div class="mistake-body">
+              <p>O olhar determina a trajetória. Olhando para baixo, a reação atrasa-se e acaba por ir para onde não pretendia. <strong>Solução:</strong> treine o olhar para 5 a 10 metros à frente. Comece com marcha lenta em terreno aberto.</p>
+            </div>
+          </div>
+          <div class="mistake-item" onclick="toggleMistake(this)">
+            <div class="mistake-header">
+              <div class="mistake-icon">🛑</div>
+              <div class="mistake-title">Travar bruscamente em todo-o-terreno</div>
+              <div class="mistake-toggle">+</div>
+            </div>
+            <div class="mistake-body">
+              <p>Uma pressão brusca no travão dianteiro em terra provoca o bloqueio da roda dianteira e a queda. <strong>Solução:</strong> trave suavemente, começando pelo travão traseiro. Use o motor para desacelerar — reduza o acelerador progressivamente.</p>
+            </div>
+          </div>
+          <div class="mistake-item" onclick="toggleMistake(this)">
+            <div class="mistake-header">
+              <div class="mistake-icon">🪑</div>
+              <div class="mistake-title">Conduzir sentado em todo-o-terreno</div>
+              <div class="mistake-toggle">+</div>
+            </div>
+            <div class="mistake-body">
+              <p>A posição sentada torna o corpo rígido — cada impacto é transmitido diretamente à coluna vertebral. <strong>Solução:</strong> levante-se nos pedais de apoio. As pernas são os amortecedores. Mesmo a baixa velocidade, a posição em pé ajuda a controlar a moto.</p>
+            </div>
+          </div>
+          <div class="mistake-item" onclick="toggleMistake(this)">
+            <div class="mistake-header">
+              <div class="mistake-icon">💪</div>
+              <div class="mistake-title">Braços tensos no guiador</div>
+              <div class="mistake-toggle">+</div>
+            </div>
+            <div class="mistake-body">
+              <p>Com os braços tensos, está a lutar contra a moto em vez de a controlar. A moto perde estabilidade. <strong>Solução:</strong> relaxe os pulsos. Segure o guiador com firmeza suficiente, mas sem crispação. Um aperto leve = controlo leve.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════
+         ECRÃ 9 — Mini teste
+         FINALIDADE: Avaliar a compreensão dos conceitos-chave do módulo
+         TIPO DE APRENDIZAGEM: Avaliação formativa — escolha múltipla com feedback explicativo
+         TIPO DE MÉDIA: Questionário interativo com explicações por pergunta
+         INTERAÇÃO: Selecionar opção → submeter → receber resposta correta + explicação
+    ═══════════════════════════════════════════════════════ -->
+    <section class="screen" id="screen9" data-screen="9">
+      <div class="screen-layout quiz-layout">
+        <div class="screen-meta-row">
+          <span class="content-type">TIPO DE CONTEÚDO: VERIFICAÇÃO DE CONHECIMENTOS</span>
+        </div>
+        <div class="instruction-note">
+          <div class="note-row"><span class="note-label">Objetivo de aprendizagem:</span> Demonstrar compreensão do equilíbrio, controlo do acelerador e equipamento de proteção.</div>
+          <div class="note-row"><span class="note-label">Interação:</span> Escolha múltipla — responder às 3 perguntas e submeter para receber feedback + explicações.</div>
+          <div class="note-row"><span class="note-label">Tempo estimado:</span> 3 minutos</div>
+        </div>
+        <div class="quiz-header">
+          <div class="screen-tag">Verificação de conhecimentos</div>
+          <h2 class="section-title">MINI <span class="accent-word">TESTE</span></h2>
+        </div>
+        <div class="quiz-container" id="quizContainer">
+          <!-- Perguntas geradas pelo JavaScript -->
+        </div>
+        <div class="quiz-result hidden" id="quizResult">
+          <div class="result-score" id="resultScore"></div>
+          <div class="result-msg" id="resultMsg"></div>
+          <button class="btn-secondary" onclick="retakeQuiz()">Repetir o teste</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════
+         ECRÃ 10 — Resumo dos objetivos de aprendizagem
+         FINALIDADE: Consolidar e confirmar todos os objetivos atingidos
+         TIPO DE APRENDIZAGEM: Resumo / reflexão final
+         TIPO DE MÉDIA: Lista animada de objetivos
+         INTERAÇÃO: Rever a lista de objetivos
+    ═══════════════════════════════════════════════════════ -->
+    <section class="screen" id="screen10" data-screen="10">
+      <div class="screen-layout standard-layout">
+        <div class="screen-meta-row">
+          <span class="content-type">TIPO DE CONTEÚDO: RESUMO DE APRENDIZAGEM</span>
+        </div>
+        <div class="instruction-note">
+          <div class="note-row"><span class="note-label">Objetivo de aprendizagem:</span> Confirmar que todos os objetivos de aprendizagem do módulo foram atingidos.</div>
+          <div class="note-row"><span class="note-label">Interação:</span> Rever a lista de objetivos antes de concluir o módulo.</div>
+          <div class="note-row"><span class="note-label">Tempo estimado:</span> 1 minuto</div>
+        </div>
+        <div class="content-header">
+          <div class="screen-tag">Resumo do módulo</div>
+          <h2 class="section-title">OBJETIVOS DE <span class="accent-word">APRENDIZAGEM</span></h2>
+          <p class="body-text">Após concluir este módulo, é capaz de:</p>
+        </div>
+        <div class="outcomes-list">
+          <div class="outcome-item" style="--delay:0.05s">
+            <div class="outcome-check">✓</div>
+            <div class="outcome-text"><strong>Explicar o que é o enduro</strong><span>Compreende a modalidade e os principais tipos de terreno.</span></div>
+          </div>
+          <div class="outcome-item" style="--delay:0.15s">
+            <div class="outcome-check">✓</div>
+            <div class="outcome-text"><strong>Identificar o equipamento de proteção</strong><span>Conhece a função do capacete, botas, proteção corporal e luvas.</span></div>
+          </div>
+          <div class="outcome-item" style="--delay:0.25s">
+            <div class="outcome-check">✓</div>
+            <div class="outcome-text"><strong>Descrever a posição correta</strong><span>Compreende a postura em pé, o aperto dos joelhos e o relaxamento do tronco.</span></div>
+          </div>
+          <div class="outcome-item" style="--delay:0.35s">
+            <div class="outcome-check">✓</div>
+            <div class="outcome-text"><strong>Controlar o acelerador e o travão</strong><span>Conhece os princípios da aceleração suave, uso da embraiagem e doseamento do travão.</span></div>
+          </div>
+          <div class="outcome-item" style="--delay:0.45s">
+            <div class="outcome-check">✓</div>
+            <div class="outcome-text"><strong>Escolher uma trajetória segura</strong><span>Sabe distinguir uma linha de condução segura de uma perigosa.</span></div>
+          </div>
+          <div class="outcome-item" style="--delay:0.55s">
+            <div class="outcome-check">✓</div>
+            <div class="outcome-text"><strong>Reconhecer os erros típicos</strong><span>Conhece os 4 erros mais comuns dos principiantes e como os corrigir.</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════
+         ECRÃ 11 — Conclusão + Próximos passos
+         FINALIDADE: Celebrar a conclusão e orientar para a próxima ação
+         TIPO DE APRENDIZAGEM: Conclusão do módulo + próximos passos práticos
+         TIPO DE MÉDIA: Visual de conclusão + lista de ações
+         INTERAÇÃO: Botão de reinício do módulo
+    ═══════════════════════════════════════════════════════ -->
+    <section class="screen" id="screen11" data-screen="11">
+      <div class="screen-layout finish-layout">
+        <div class="finish-gfx">
+          <!-- substituir pela ilustração de conclusão real -->
+          <img src="https://wallpapercat.com/w/full/2/2/6/1150050-2560x1280-desktop-dual-monitors-enduro-motorbike-wallpaper.jpg" alt="Conclusão" class="finish-img" />
+          <div class="finish-overlay"></div>
+        </div>
+        <div class="finish-content">
+          <div class="congrats-badge">🏆</div>
+          <div class="screen-tag" style="justify-content:center">Módulo concluído</div>
+          <h1 class="display-title" style="text-align:center">PARABÉNS!</h1>
+          <p class="body-text" style="text-align:center;max-width:480px;margin:0 auto 1.2rem">Agora compreende os princípios fundamentais da condução de enduro e pode avançar para o treino prático num espaço fechado.</p>
+          <div class="finish-stats">
+            <div class="stat"><div class="stat-num">11</div><div class="stat-label">Ecrãs</div></div>
+            <div class="stat"><div class="stat-num">1</div><div class="stat-label">Teste</div></div>
+            <div class="stat"><div class="stat-num">100%</div><div class="stat-label">Progresso</div></div>
+          </div>
+          <!-- BLOCO PRÓXIMO PASSO -->
+          <div class="next-step-block">
+            <div class="next-step-header">
+              <span class="next-step-icon">▶</span>
+              Próximo passo: Treino prático
+            </div>
+            <p class="next-step-sub">Exercícios recomendados no campo de treino:</p>
+            <ul class="next-step-list">
+              <li>Exercícios de posição em pé — conduzir em pé em superfície plana</li>
+              <li>Exercícios de controlo de equilíbrio — percurso com cones a baixa velocidade</li>
+              <li>Condução a baixa velocidade — manter o controlo da moto sem quedas</li>
+              <li>Ultrapassagem de obstáculos simples — contornar barreiras básicas</li>
+            </ul>
+          </div>
+          <button class="btn-primary" onclick="restartModule()">↺ Recomeçar</button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════ NAVEGAÇÃO ═══════════════════ -->
+  <nav class="bottom-nav">
+    <button class="nav-btn back-btn" id="backBtn" onclick="goPrev()" disabled>← Anterior</button>
+    <div class="dot-indicators" id="dotIndicators"></div>
+    <button class="nav-btn next-btn" id="nextBtn" onclick="goNext()">Seguinte →</button>
+  </nav>
+
+  <!-- Indicação de navegação por teclado -->
+  <div class="kbd-hint" id="kbdHint">
+    <span class="kbd">←</span><span class="kbd">→</span> navegar &nbsp;·&nbsp; <span class="kbd">Esc</span> para o início
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
